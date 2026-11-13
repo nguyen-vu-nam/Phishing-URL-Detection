@@ -1,0 +1,5 @@
+https://example.com
+https://github.com
+https://google.com
+https://cliproxy.com/vi/
+https://microsoft.com

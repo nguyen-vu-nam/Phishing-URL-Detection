@@ -1,0 +1,86 @@
+{
+  "counts": {
+    "uci_train": 164782,
+    "external_train": 90000,
+    "external_train_legitimate": 45000,
+    "external_train_phishing": 45000,
+    "external_test_legitimate": 26721,
+    "external_test_phishing": 32969,
+    "external_test_domains": 31888,
+    "uci_test": 36229
+  },
+  "external": {
+    "original": {
+      "tn": 7,
+      "fp": 26714,
+      "fn": 1,
+      "tp": 32968,
+      "fpr": 0.9997380337562217,
+      "recall": 0.9999696684764475,
+      "f1": 0.711659884944577,
+      "roc_auc": 0.8264449604492585
+    },
+    "candidate": {
+      "tn": 25168,
+      "fp": 1553,
+      "fn": 1886,
+      "tp": 31083,
+      "fpr": 0.058119082369671796,
+      "recall": 0.9427947465801207,
+      "f1": 0.9475802149226431,
+      "roc_auc": 0.9882290401643574
+    }
+  },
+  "uci": {
+    "original": {
+      "tn": 20484,
+      "fp": 1,
+      "fn": 64,
+      "tp": 15680,
+      "fpr": 4.88162069807176e-05,
+      "recall": 0.9959349593495935,
+      "f1": 0.9979315831344471,
+      "roc_auc": 0.9989519444998423
+    },
+    "candidate": {
+      "tn": 20126,
+      "fp": 359,
+      "fn": 3693,
+      "tp": 12051,
+      "fpr": 0.017525018306077618,
+      "recall": 0.7654344512195121,
+      "f1": 0.856077289195141,
+      "roc_auc": 0.9357098584677267
+    }
+  },
+  "official_audit": {
+    "original": {
+      "https://dash.cloudflare.com/": 0.9999906281655998,
+      "https://github.com": 0.9998680900280135,
+      "https://translate.google.com/": 0.9999906281655998,
+      "https://chatgpt.com/": 0.9999895919911965,
+      "https://www.example.org": 0.00018805768936676568,
+      "https://www.example.org/": 0.9612650294881339,
+      "https://support.microsoft.com/": 0.9999905451593601,
+      "https://www.wikipedia.org/": 0.9512776580840655,
+      "https://docs.python.org/3/": 0.9999906281655998,
+      "https://www.mozilla.org/": 0.9560869624487468,
+      "https://www.bbc.com/": 0.9984053965776798
+    },
+    "candidate": {
+      "https://dash.cloudflare.com/": 0.9695703041445805,
+      "https://github.com": 0.14712603531534638,
+      "https://translate.google.com/": 0.7363542526741902,
+      "https://chatgpt.com/": 0.3411451733242375,
+      "https://www.example.org": 0.05712659868021347,
+      "https://www.example.org/": 0.05712659868021347,
+      "https://support.microsoft.com/": 0.9848455482384213,
+      "https://www.wikipedia.org/": 0.05670646778992814,
+      "https://docs.python.org/3/": 0.9632641674748911,
+      "https://www.mozilla.org/": 0.059506770111769,
+      "https://www.bbc.com/": 0.13841449709940531
+    }
+  },
+  "max_recall_drop": 0.02,
+  "passes_replacement_gate": false
+}

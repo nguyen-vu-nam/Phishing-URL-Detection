@@ -1,0 +1,76 @@
+{
+  "counts": {
+    "uci_train": 164785,
+    "external_train": 90000,
+    "external_train_legitimate": 45000,
+    "external_train_phishing": 45000,
+    "external_test_legitimate": 26704,
+    "external_test_phishing": 31986,
+    "external_test_domains": 31889,
+    "uci_test": 36229
+  },
+  "external": {
+    "original": {
+      "tn": 7,
+      "fp": 26697,
+      "fn": 0,
+      "tp": 31986,
+      "fpr": 0.9997378669862192,
+      "recall": 1.0,
+      "f1": 0.7055553717367568,
+      "roc_auc": 0.8279778678917233
+    },
+    "candidate": {
+      "tn": 24940,
+      "fp": 1764,
+      "fn": 754,
+      "tp": 31232,
+      "fpr": 0.06605751947273816,
+      "recall": 0.9764271868942662,
+      "f1": 0.9612508079160383,
+      "roc_auc": 0.9938744850250354
+    }
+  },
+  "uci": {
+    "original": {
+      "tn": 20484,
+      "fp": 1,
+      "fn": 64,
+      "tp": 15680,
+      "fpr": 4.88162069807176e-05,
+      "recall": 0.9959349593495935,
+      "f1": 0.9979315831344471,
+      "roc_auc": 0.9989519444998423
+    },
+    "candidate": {
+      "tn": 20485,
+      "fp": 0,
+      "fn": 461,
+      "tp": 15283,
+      "fpr": 0.0,
+      "recall": 0.9707190040650406,
+      "f1": 0.9851419731201857,
+      "roc_auc": 0.9986978515535857
+    }
+  },
+  "official_audit": {
+    "original": {
+      "https://dash.cloudflare.com/": 0.9999906281655998,
+      "https://github.com": 0.9998680900280135,
+      "https://translate.google.com/": 0.9999906281655998,
+      "https://chatgpt.com/": 0.9999895919911965,
+      "https://www.example.org": 0.00018805768936676568,
+      "https://www.example.org/": 0.9612650294881339
+    },
+    "candidate": {
+      "https://dash.cloudflare.com/": 0.9947533271592168,
+      "https://github.com": 0.8654878285986278,
+      "https://translate.google.com/": 0.9839350466472232,
+      "https://chatgpt.com/": 0.8363354109667333,
+      "https://www.example.org": 0.00206823377457543,
+      "https://www.example.org/": 0.03323924702212768
+    }
+  },
+  "max_recall_drop": 0.02,
+  "passes_replacement_gate": false
+}
